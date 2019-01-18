@@ -1,11 +1,17 @@
 // eslint-disable-next-line
 function greet() {
 
-    // get the inputs by id
-
-    // get values out of inputs
+    var firstNameInput = document.getElementById('first-name');
+    var lastNameInput = document.getElementById('last-name');
+    
+    var firstName = firstNameInput.value;
+    var lastName = lastNameInput.value;
 
     // make the greeting
+    
+    var greeting = 'Hello ' + firstName + ' ' + lastName + ' !';
+    
+    console.log(greeting);
 
     // display greeting
 
