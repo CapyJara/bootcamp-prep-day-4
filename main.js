@@ -7,20 +7,14 @@ function greet() {
     var firstName = firstNameInput.value;
     var lastName = lastNameInput.value;
 
-    // make the greeting
+    var greeting = 'Hello ' + firstName + ' ' + lastName + '!';
     
-    var greeting = 'Hello ' + firstName + ' ' + lastName + ' !';
-    
-    console.log(greeting);
-
     // display greeting
-
+    var greeter = document.getElementById('greeter');
+    greeter.textContent = greeting;
+    
     // remove prompt?
 }
 
 //TODO: validate name inputs
 //TODO: clear inputs agter greet?
-
-
-
-greet();
